@@ -13,7 +13,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: rgb(242, 244, 242);
-  margin: 20px;
+  margin: 0 20px 20px 20px;
 }
 .head-layout {
   display: flex;
@@ -24,7 +24,7 @@ body {
   border-radius: var(--border-radius);
   border: var(--border-section);
 }
-h1 {
+.h1 {
   display: flex;
   align-self: center;
   background-color: rgb(113, 113, 223);
@@ -40,19 +40,26 @@ h1 {
   height: 420px;
   background-color: var(--color-blackinside);
   border: var(--border-section);
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .questdisp {
   background-color: var(--color-blackinside);
-  font-size: 16px;
+  font-size: 24px;
   display: flex;
   justify-content: center;
+}
+.questbutton {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  background-color: lightblue;
+  text-decoration: none;
+  border-radius: var(--border-radius);
 }
 a {
   display: flex;
   justify-content: center;
-  align-self: center;
   background-color: var(--color-blackinside);
   text-decoration: none;
 }
@@ -68,18 +75,13 @@ a {
   border: var(--border-section);
   border-radius: var(--border-radius);
 }
+.ansbutton {
+  font-size: 20px;
+}
 
 .questinside {
   background-color: var(--color-blackinside);
   height: 300px;
-}
-.questbutton {
-  margin: 30px;
-  display: flex;
-  font-size: 40px;
-  flex-flow: wrap;
-  background-color: lightblue;
-  border-radius: var(--border-radius);
 }
 ul {
     display: flex;
@@ -100,15 +102,24 @@ ul {
   width: 96%;
   height: 120px;
   margin-top: 50px;
-  background-color: var(--color-blackinside);
+  background-color:whitesmoke ;
   border: var(--border-section);
+  border-radius: var(--border-radius);
 }
 .afooter {
     display: flex;
     flex-direction: row;
+    align-self: center;
     width: 80px;
     height: 80px;
-    background-color: var(--color-blackinside);
+    background-color:rgb(14, 13, 13) ;
+    border: var(--border-section);
+    border-radius: var(--border-radius);
+    padding: -5px;
+    margin: 30px;
+}
+.imgfooter {
+  border-radius: var(--border-radius);
 }
 
 .imgsection {
@@ -123,4 +134,23 @@ ul {
     margin-top: 20px;
     border-radius: var(--border-radius);
     border: var(--border-section);
+}
+
+.main2{
+
+}
+.counter {
+  display: flex;
+  width: max-content;
+  height: 50px;
+  padding: 20px;
+  background-color: var(--color-blackinside);
+  border-radius: var(--border-radius);
+  border: var(--border-section);
+
+}
+
+#answer, #answer2,#answer3, #answer4 {
+background-color: var(--color-blackinside);
+font-size: 30px;
 }

@@ -7,52 +7,99 @@
 <link rel="stylesheet" href="./cssFile/QuizApp.css">
 <title>QuizApp</title>
 </head>
-<legend>
+<body>
     <header class="head-layout">
-        <h1>Antons Quiz App</h1>
+        <h1 class="h1">Antons Quiz Page</h1>
     </header>
-    <legend><a class="bookmark" href="bookmark.html"><img class="imgsection" src="img/bookmark.jpg"></a>
-<section class="question" id="quest1">
-    <p class="questdisp">What is "Anton Wolf"</p>
-    <a href="Lost.html"><button class="questbutton">a boolean</button></a>
-    <a href=""><button class="questbutton">a string</button></a>
-    <a href="Lost.html"><button class="questbutton">a number</button></a>
+    
+    </script>
+    <legend>
+        <a class="bookmark" href="bookmark.html#Q1"><img class="imgsection" src="img/bookmark.jpg"></a>
+           <section class="question">
+             <p class="questdisp">What is "Name Lastname"?</p>
+             <a href="Lost.html"><button class="questbutton">a boolean</button></a>
+             <a><button class="questbutton" onclick="onButtonClick()">a string</button></a><strong id="right"></strong>
+             <a href="Lost.html"><button class="questbutton">a number</button></a>
+             <button class="ansbutton" onclick="myAnswer()">Answer</button>
+             <p id="answer"></p>
+             <script>
+               function myAnswer() {
+                 document.getElementById("answer").innerHTML = "a string";
+               }
+               function onButtonClick() {
+    document.getElementById("right").innerHTML = "right!";
+  }
+             </script>
 </section>
 </legend>
-<legend><a class="bookmark" href="bookmark.html"><img class="imgsection" src="img/bookmark.jpg"></a>
-<section class="question" id="quest2">
+
+<legend><a class="bookmark" href="bookmark.html#Q2"><img class="imgsection" src="img/bookmark.jpg"></a>
+<section class="question" >
     <p class="questdisp">What does font-size do?</p>
     <a href="Lost.html"><button class="questbutton">change the style of the font</button></a>
     <a href="Lost.html"><button class="questbutton">change the family of the font</button></a>
-    <a href=""><button class="questbutton">change the size of the font</button></a>
+    <a><button class="questbutton" onclick="onButtonClickTwo()">change the size of the font</button></a><strong id="right2"></strong>
+    <button class="ansbutton" onclick="myAnswer2()">Answer</button>
+    <p id="answer2"></p>
+    <script>
+      function myAnswer2() {
+        document.getElementById("answer2").innerHTML = "size of the font";
+      }
+      function onButtonClickTwo() {
+    document.getElementById("right2").innerHTML = "right!";
+  }
+    </script>
 </section>
 </legend>
-<legend><a class="bookmark" href="bookmark.html"><img class="imgsection" src="img/bookmark.jpg"></a>
-    <section class="question" id="quest3">
+
+<legend><a class="bookmark" href="bookmark.html#Q3" ><img class="imgsection" src="img/bookmark.jpg"></a>
+    <section class="question" >
     <p class="questdisp">will padding: 20 20 20 0; work?</p>
-    <a href=""><button class="questbutton">no it has no unit</button></a>
+    <a><button class="questbutton" onclick="onButtonClickThree()">no it has no unit</button></a><strong id="right3"></strong>
     <a href="Lost.html"><button class="questbutton">it will</button></a>
     <a href="Lost.html"><button class="questbutton">yes but only the first 3</button></a>
-
+    <button class="ansbutton" onclick="myAnswer3()">Answer</button>
+    <p id="answer3"></p>
+    <script>
+      function myAnswer3() {
+        document.getElementById("answer3").innerHTML = "no it has no unit";
+      }
+      function onButtonClickThree() {
+    document.getElementById("right3").innerHTML = "right!";
+  }
+      </script>
 </section>
 </legend>
-<legend><a class="bookmark" href="bookmark.html"><img class="imgsection" src="img/bookmark.jpg"></a>
-<section class="question" id="quest4">
+
+<legend><a class="bookmark" href="bookmark.html#Q4"><img class="imgsection" src="img/bookmark.jpg"></a>
+<section class="question">
     <p class="questdisp">what does css mean?</p>
-    <a href=""><button class="questbutton">Cascading Style Sheets </button></a>
+    <a><button class="questbutton" onclick="onButtonClickFour()">Cascading Style Sheets </button></a><strong id="right4"></strong>
     <a href="Lost.html"><button class="questbutton">Combined Simulation Style</button></a>
     <a href="Lost.html"><button class="questbutton">Canvas Sheet Syncronisation</button></a>
+    <button class="ansbutton" onclick="myAnswer4()">Answer</button>
+    <p id="answer4"></p>
+    <script>
+      function myAnswer4() {
+        document.getElementById("answer4").innerHTML = "Cascading Style Sheets";
+      }
+      function onButtonClickFour() {
+    document.getElementById("right4").innerHTML = "right!";
+  }
+      </script>
 </section>
 </legend>
+
+
 <section class="margin">
 </section>
 
 
-<nav class="footer">
-        <a class="afooter" href="Profile.html"><img class="imgfooter" src="img/profile.jpg"></a>
+<footer class="footer">
+        <a class="afooter" href="Profile.html"><img class="imgfooter" src="img/profiledark.png"></a>
         <a class="afooter" href="bookmark.html"><img class="imgfooter" src="img/bookmark.jpg"></a>
         <a class="afooter" href="QuizApp.html"><img class="imgfooter" src="img/houseicon.jpg"></a>
-    </nav>
+    </footer>
 
 </body>
 </html>
