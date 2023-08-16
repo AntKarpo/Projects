@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="./cssFile/QuizApp.css">
-<title>QuizApp</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cssFile/QuizApp.css" />
+    <title>QuizApp</title>
+  </head>
+  <body>
     <header class="head-layout">
-        <h1 class="h1">Profile</h1>
+      <h1 class="h1">Profile</h1>
     </header>
     <main class="main2">
-        <h2 style="color: black;">Anton Karpov</h2>
-        <img src="img/doginsmoking.png"> <p style="color: black;">Hello! my name is Anton and this is my Profil would you like to know more?</p>
-        
-        <section class="counter">Answers right= </section>
-        <section class="counter">Bookmarks= </section>
-        <section class="counter">Dark mode on <label class="switch">
-            <input type="checkbox" onclick="onSlide()">
-            <span class="slider round"></span>
-          </label>
-          <script>
-            function onSlide() {
-  var element = document.body;
-  element.classList.toggle("dark");
-}
-            </script></section>
+      <h2 style="color: black">Anton Karpov</h2>
+      <img src="img/doginsmoking.png" />
+      <p style="color: black">
+        Hello! my name is Anton and this is my Profil would you like to know
+        more?
+      </p>
 
+      <section class="counter">Answers right=</section>
+      <section class="counter">Bookmarks=</section>
+      <section class="counter">
+        Dark mode on
+        <label class="switch">
+          <input type="checkbox" onclick="onSlide()" />
+          <span class="slider round"></span>
+        </label>
+        <script>
+          function onSlide() {
+            var element = document.body;
+            element.classList.toggle("dark");
+          }
+        </script>
+      </section>
     </main>
     <footer class="footer">
-        <a class="afooter" href="Profile.html"><img class="imgfooter" src="img/profile.png"></a>
-        <a class="afooter" href="bookmark.html"><img class="imgfooter" src="img/bookmark.jpg"></a>
-        <a class="afooter" href="QuizApp.html"><img class="imgfooter" src="img/houseicon.jpg"></a>
+      <a class="afooter" href="Profile.html"
+        ><img class="imgfooter" src="img/profile.png"
+      /></a>
+      <a class="afooter" href="bookmark.html"
+        ><img class="imgfooter" src="img/bookmark.png"
+      /></a>
+      <a class="afooter" href="QuizApp.html"
+        ><img class="imgfooter" src="img/houseicon.jpg"
+      /></a>
     </footer>
-</body>
+  </body>
 </html>
