@@ -16,8 +16,8 @@ body {
   color: rgb(242, 244, 242);
   margin: 0 20px 20px 20px;
 }
-.dark{
-  background-color:var(--color-blackinside);
+.dark {
+  background-color: var(--color-blackinside);
   color: white;
 }
 .head-layout {
@@ -48,19 +48,17 @@ body {
   border: var(--border-section);
   margin-bottom: 10px;
 }
-.insidequest{
+.insidequest {
   display: flex;
   justify-content: center;
-
 }
 
 .bookmark {
-   position: absolute;
-   top: -20px;
-   right: 0;
-    margin-top: 20px;
-    border-radius: var(--border-radius);
-    border: var(--border-section);
+  position: absolute;
+  top: -16px;
+  right: 5px;
+  margin-top: 20px;
+  border-radius: var(--border-radius);
 }
 .questdisp {
   background-color: var(--color-blackinside);
@@ -84,11 +82,11 @@ a {
   text-decoration: none;
 }
 .margin {
-    height: 100px;
+  height: 100px;
 }
 
 .button {
-   font-size: 30px;
+  font-size: 30px;
   color: white;
   margin: 10px;
   background-color: var(--color-buttonHead);
@@ -109,14 +107,14 @@ a {
   height: 300px;
 }
 ul {
-    display: flex;
-    flex-direction: column;
-    align-self:flex-start;
-    background-color: var(--color-blackinside);
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  background-color: var(--color-blackinside);
 }
 
 .spiced {
-    font-size: 80px;
+  font-size: 80px;
 }
 
 .footer {
@@ -127,21 +125,21 @@ ul {
   width: 96%;
   height: 120px;
   margin-top: 50px;
-  background-color:whitesmoke ;
+  background-color: whitesmoke;
   border: var(--border-section);
   border-radius: var(--border-radius);
 }
 .afooter {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    width: 80px;
-    height: 80px;
-    background-color:rgb(14, 13, 13) ;
-    border: var(--border-section);
-    border-radius: var(--border-radius);
-    padding: -5px;
-    margin: 30px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(14, 13, 13);
+  border: var(--border-section);
+  border-radius: var(--border-radius);
+  padding: -5px;
+  margin: 30px;
 }
 .imgfooter {
   border-radius: var(--border-radius);
@@ -149,10 +147,10 @@ ul {
 }
 
 .imgsection {
-   display: flex;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .counter {
@@ -163,12 +161,18 @@ ul {
   background-color: var(--color-blackinside);
   border-radius: var(--border-radius);
   border: var(--border-section);
-
 }
 
-#answer, #answer2,#answer3, #answer4 ,#right, #right2 , #right3 , #right4 {
-background-color: var(--color-blackinside);
-font-size: 30px;
+#answer,
+#answer2,
+#answer3,
+#answer4,
+#right,
+#right2,
+#right3,
+#right4 {
+  background-color: var(--color-blackinside);
+  font-size: 30px;
 }
 
 .switch {
@@ -177,11 +181,11 @@ font-size: 30px;
   left: 16px;
   width: 60px;
   height: 34px;
-  background-color:var(--color-blackinside);
+  background-color: var(--color-blackinside);
   border-radius: var(--border-radius);
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -194,9 +198,9 @@ font-size: 30px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:var(--color-blackinside);
-  -webkit-transition: .4s;
-  transition: .4s;
+  background-color: var(--color-blackinside);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -207,8 +211,8 @@ font-size: 30px;
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -224,7 +228,6 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
 
 .slider.round {
   border-radius: 34px;
