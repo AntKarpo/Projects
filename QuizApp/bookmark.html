@@ -8,21 +8,87 @@
 <title>QuizApp</title>
 </head>
 <body>
-    <header>
-
+    <header class="head-layout">
+        <h1 class="h1">Bookmark</h1>
     </header>
     <main>
+       
+            
+               <section class="question" id="Q1">
+                 <p class="questdisp">What is "Name Lastname"?</p>
+                 <a href="Lost.html"><button class="questbutton">a boolean</button></a>
+                 <a href=""><button class="questbutton">a string</button></a>
+                 <a href="Lost.html"><button class="questbutton">a number</button></a>
+                 <button onclick="myAnswer()">Answer</button>
+             <p id="answer"></p>
+             <script>
+               function myAnswer() {
+                 document.getElementById("answer").innerHTML = "a string";
+               }
+             </script>
+                
+    </section>
+
+    
+    
+    <section class="question" id="Q2">
+        <p class="questdisp">What does font-size do?</p>
+        <a href="Lost.html"><button class="questbutton">change the style of the font</button></a>
+        <a href="Lost.html"><button class="questbutton">change the family of the font</button></a>
+        <a href=""><button class="questbutton">change the size of the font</button></a>
+        <button onclick="myAnswer2()">Answer</button>
+    <p id="answer2"></p>
+    <script>
+      function myAnswer2() {
+        document.getElementById("answer2").innerHTML = "size of the font";
+      }
+    </script>
+      
+    </section>
+
+    
+
+        <section class="question" id="Q3" >
+        <p class="questdisp">will padding: 20 20 20 0; work?</p>
+        <a href=""><button class="questbutton">no it has no unit</button></a>
+        <a href="Lost.html"><button class="questbutton">it will</button></a>
+        <a href="Lost.html"><button class="questbutton">yes but only the first 3</button></a>
+        <button onclick="myAnswer3()">Answer</button>
+    <p id="answer3"></p>
+    <script>
+      function myAnswer3() {
+        document.getElementById("answer3").innerHTML = "no it has no unit";
+      }
+      </script>
+    </section>
+   
+    
+    
+    <section class="question" id="Q4">
+        <p class="questdisp">what does css mean?</p>
+        <a href=""><button class="questbutton">Cascading Style Sheets </button></a>
+        <a href="Lost.html"><button class="questbutton">Combined Simulation Style</button></a>
+        <a href="Lost.html"><button class="questbutton">Canvas Sheet Syncronisation</button></a>
+        <button onclick="myAnswer4()">Answer</button>
+    <p id="answer4"></p>
+    <script>
+      function myAnswer4() {
+        document.getElementById("answer4").innerHTML = "Cascading Style Sheets";
+      }
+      </script>
+    </section>
+       
+
         
 
     </main>
 
 
-    <nav class="footer">
-        <a class="afooter" href="Profile.html"><img class="imgfooter" src="img/profile.jpg"></a>
-        <a class="afooter" href="bookmark.html"><img class="imgfooter" src="img/bookmark.jpg"></a>
+    <footer class="footer">
+        <a class="afooter" href="Profile.html"><img class="imgfooter" src="img/profiledark.png"></a>
+        <a class="afooter" href="bookmark.html"><img class="imgfooter" src="img/bookmarkblack.png"></a>
         <a class="afooter" href="QuizApp.html"><img class="imgfooter" src="img/houseicon.jpg"></a>
-    </nav>
-
+    </footer>
 
 </body>
 
