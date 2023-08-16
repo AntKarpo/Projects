@@ -17,9 +17,20 @@
         
         <section class="counter">Count Answers= </section>
         <section class="counter">Bookmarks= </section>
-        <section class="counter">Dark mode on <input type="checkbox" id="switch"
-            class="checkbox" />
-<label for="switch" class="toggle"> </section>
+        <section class="counter">Dark mode on <label class="switch">
+            <input type="checkbox" onclick="onSlide()">
+            <span class="slider round"></span>
+          </label>
+          <script>
+            let mode = "light";
+            let color = "ghostWhite";
+            let label = "Light Mode";
+            
+            function onSlide() {
+  var element = document.body;
+  element.classList.toggle("dark");
+}
+            </script></section>
 
     </main>
     <footer class="footer">
@@ -27,7 +38,5 @@
         <a class="afooter" href="bookmark.html"><img class="imgfooter" src="img/bookmark.jpg"></a>
         <a class="afooter" href="QuizApp.html"><img class="imgfooter" src="img/houseicon.jpg"></a>
     </footer>
-
-
 </body>
 </html>

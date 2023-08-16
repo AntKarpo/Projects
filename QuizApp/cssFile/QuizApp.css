@@ -5,15 +5,20 @@
   --border-radius: 20px;
 }
 * {
-  background-color: lightblue;
   box-sizing: border-box;
 }
+
 body {
+  background-color: lightblue;
   padding: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: rgb(242, 244, 242);
   margin: 0 20px 20px 20px;
+}
+.dark{
+  background-color:var(--color-blackinside);
+  color: white;
 }
 .head-layout {
   display: flex;
@@ -35,6 +40,7 @@ body {
 }
 
 .question {
+  position: relative;
   border-radius: 20px;
   width: 100%;
   height: 420px;
@@ -42,7 +48,20 @@ body {
   border: var(--border-section);
   margin-bottom: 10px;
 }
+.insidequest{
+  display: flex;
+  justify-content: center;
 
+}
+
+.bookmark {
+   position: absolute;
+   top: -20px;
+   right: 0;
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    border: var(--border-section);
+}
 .questdisp {
   background-color: var(--color-blackinside);
   font-size: 24px;
@@ -52,6 +71,7 @@ body {
 .questbutton {
   display: flex;
   justify-content: center;
+  margin: 40px;
   font-size: 35px;
   background-color: lightblue;
   text-decoration: none;
@@ -68,6 +88,7 @@ a {
 }
 
 .button {
+  
   font-size: 30px;
   color: white;
   margin: 10px;
@@ -76,7 +97,12 @@ a {
   border-radius: var(--border-radius);
 }
 .ansbutton {
+  position: absolute;
+  bottom: 70px;
+  right: 50%;
   font-size: 20px;
+  background-color: lightblue;
+  border-radius: var(--border-radius);
 }
 
 .questinside {
@@ -120,6 +146,7 @@ ul {
 }
 .imgfooter {
   border-radius: var(--border-radius);
+  background-color: azure;
 }
 
 .imgsection {
@@ -128,17 +155,7 @@ ul {
     height: 50px;
     border-radius: 50%;
 }
-.bookmark {
-    display: flex;
-    justify-content: end;
-    margin-top: 20px;
-    border-radius: var(--border-radius);
-    border: var(--border-section);
-}
 
-.main2{
-
-}
 .counter {
   display: flex;
   width: max-content;
@@ -150,7 +167,77 @@ ul {
 
 }
 
-#answer, #answer2,#answer3, #answer4 {
+#answer, #answer2,#answer3, #answer4 ,#right, #right2 , #right3 , #right4 {
 background-color: var(--color-blackinside);
 font-size: 30px;
+}
+
+.switch {
+  position: relative;
+  bottom: 14px;
+  left: 16px;
+  width: 60px;
+  height: 34px;
+  background-color:var(--color-blackinside);
+  border-radius: var(--border-radius);
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:var(--color-blackinside);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--color-buttonHead);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px --color-buttonHead;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+@media screen and(max-width: 600px) {
+  body{
+  width: 50%;
+}
 }
