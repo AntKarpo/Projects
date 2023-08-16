@@ -30,7 +30,7 @@ body {
   border: var(--border-section);
 }
 .h1 {
-  display: flex;
+  position: absolute;
   align-self: center;
   background-color: rgb(113, 113, 223);
   padding: 20px;
@@ -88,8 +88,7 @@ a {
 }
 
 .button {
-  
-  font-size: 30px;
+   font-size: 30px;
   color: white;
   margin: 10px;
   background-color: var(--color-buttonHead);
@@ -100,7 +99,7 @@ a {
   position: absolute;
   bottom: 70px;
   right: 50%;
-  font-size: 20px;
+  font-size: 30px;
   background-color: lightblue;
   border-radius: var(--border-radius);
 }
@@ -217,7 +216,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px --color-buttonHead;
+  box-shadow: 0 0 1px var(--color-buttonHead);
 }
 
 input:checked + .slider:before {
@@ -229,15 +228,9 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
+  background-color: blue;
 }
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-
-@media screen and(max-width: 600px) {
-  body{
-  width: 50%;
-}
 }
