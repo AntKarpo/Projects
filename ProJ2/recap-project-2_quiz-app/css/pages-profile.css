@@ -4,8 +4,9 @@
   margin-bottom: 40px;
   align-items: initial;
 }
-.dark {
+.dark{
   background-color: rgb(68, 68, 68);
+  color: aliceblue;
 }
 
 .profile__name-wrapper {

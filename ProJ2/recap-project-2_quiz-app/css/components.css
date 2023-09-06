@@ -56,5 +56,5 @@ input:checked + .switch:after {
 }
 
 #answerCounter:hover, #questionCounter:hover {
-  color: blueviolet;
+  color: purple;
 }
