@@ -37,7 +37,7 @@ input:checked + .switch:after {
   box-shadow: 1px 1px 5px -1px black;
 }
 
-.switch:after {
+.switch::after {
   content: "";
   position: absolute;
   width: 17px;
@@ -46,4 +46,15 @@ input:checked + .switch:after {
   top: 2px;
   bottom: 2px;
   background-color: var(--active-color);
+}
+
+#answerCounter, #questionCounter {
+  color: rgb(61, 20, 195);
+  position: relative;
+  font-size: 15px;
+  left: 350px;
+}
+
+#answerCounter:hover, #questionCounter:hover {
+  color: purple;
 }
