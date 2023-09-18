@@ -10,12 +10,3 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-main{
-  display: flex;
-  justify-content: center;
-}
-.button {
-  background-color: orange;
-  color: white;
-}
