@@ -24,6 +24,7 @@
 
 .question-card__tag {
   background-color: var(--accent-color);
+  margin-top: 10px;
   padding: 5px 10px;
   border-radius: 20px;
   border: 1px solid black;
@@ -31,4 +32,28 @@
 
 .question-card__tag:not(:last-child) {
   margin-right: 10px;
+}
+
+.question-card__answer {
+display: none;
+}
+
+
+textarea, input {
+  width: 500px;
+}
+
+.submitNew {
+  margin: 10px;
+  width: max-content;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+#add {
+ position: relative;
 }

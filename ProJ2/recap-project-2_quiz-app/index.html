@@ -15,14 +15,15 @@
       <section class="question-card">
         <img
           class="question-card__icon"
+          onclick="toggleBookmark(this)"
           src="./assets/bookmark.png"
           alt="bookmark"
         />
         <h2 class="question-card__title">
-          What property flips the axes of flexbox
+          What property flips the axes of flexbox?
         </h2>
-        <button class="question-card__button">show answer</button>
-        <p class="question-card__answer"></p>
+        <button class="question-card__button" type="button" onclick="answer(this)">show answer</button>
+        <p class="question-card__answer">flex-direction</p>
         <div class="question-card__tags">
           <div class="question-card__tag">#html</div>
           <div class="question-card__tag">#css</div>
@@ -33,11 +34,12 @@
         <img
           class="question-card__icon question-card__icon--active"
           src="./assets/bookmark_filled.png"
+          onclick="toggleBookmark(this)"
           alt="bookmark filled"
         />
         <h2 class="question-card__title">Why is accessibility important?</h2>
-        <button class="question-card__button">show answer</button>
-        <p class="question-card__answer"></p>
+        <button class="question-card__button" type="button" onclick="answer(this)">show answer</button>
+        <p class="question-card__answer">inclusive design</p>
         <div class="question-card__tags">
           <div class="question-card__tag">#html</div>
           <div class="question-card__tag">#accessibility</div>
@@ -48,12 +50,13 @@
           class="question-card__icon"
           src="./assets/bookmark.png"
           alt="bookmark"
+          onclick="toggleBookmark(this)"
         />
         <h2 class="question-card__title">
           What are the different position property values?
         </h2>
-        <button class="question-card__button">show answer</button>
-        <p class="question-card__answer"></p>
+        <button class="question-card__button" onclick="answer(this)">show answer</button>
+        <p class="question-card__answer">relative absolute fixed</p>
         <div class="question-card__tags">
           <div class="question-card__tag">#html</div>
           <div class="question-card__tag">#css</div>
@@ -79,6 +82,10 @@
       <a href="profile.html" class="footer__link">
         <img class="footer__icon" src="./assets/profile.png" alt="profile" />
       </a>
+      <a href="add.html" class="footer__link">
+        <img class="footer__icon" src="./assets/add.jpg" alt="add" />
+      </a>
     </footer>
+    <script src="JavaScript/index.js"></script>
   </body>
 </html>

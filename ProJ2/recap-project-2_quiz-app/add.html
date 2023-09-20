@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+<body>
+  <header>
+    <h1>Quiz App</h1>
+  </header>
+    <main data-js="main">
+      <section class="question-card" id="add" >
+      <form action="" data-js="form" class="form">
+      <fieldset>
+        <label for="addQuestion"> <h2>Add your own question:</h2></label>
+        <textarea name="question" id="addQuestion"  cols="20" rows="6" maxlength="150"  placeholder="type your question here"></textarea>
+        <p class="counter" id="questionCounter">Characters left: 150</p>
+
+        <label for="addAnswer"><p><strong>Answer:</strong></p></label>
+        <textarea name="answer" id="addAnswer" cols="20" rows="4"  maxlength="150" placeholder="type your answer here"></textarea>
+        <p class="counter" id="answerCounter">Characters left: 150</p>
+
+        <label for="hashtags"><p><strong>Hashtags:</strong></p></label>
+        <input name="hashtags" id="hashtags" type="text" placeholder="#"><br>
+        
+        <button name="submitNew" class="submitNew" type="submit">Submit</button>
+
+    </fieldset>
+      </form>
+    </section>
+    </main>
+
+
+  
+  <footer class="footer">
+    <a href="index.html" class="footer__link">
+      <img class="footer__icon" src="./assets/home.png" alt="home" />
+    </a>
+    <a href="bookmark.html" class="footer__link">
+      <img
+      class="footer__icon"
+      src="./assets/bookmark_transparent.png"
+      alt="bookmark"
+      />
+    </a>
+    <a href="profile.html" class="footer__link">
+      <img
+      class="footer__icon"
+      src="./assets/profile_filled.png"
+      alt="profile"
+      />
+    </a>
+    <a href="add.html" class="footer__link footer__link--active">
+      <img class="footer__icon" src="./assets/add.jpg" alt="add" />
+    </a>
+  </footer>
+  <script src="JavaScript/index.js"></script>
+</body>
+  </html>
