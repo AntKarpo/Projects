@@ -1,0 +1,14 @@
+.buttonDelete{
+    border: none;
+    background-color: cadetblue;
+    color: white;
+}
+
+.addedActivity{
+    background-color: cadetblue;
+    list-style-type: none; 
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
